@@ -1,6 +1,6 @@
 {
   "name": "com.hue.zigbee",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Control your Philips Hue (ZigBee) devices with Homey!",
   "main": "app.js",
   "dependencies": {
