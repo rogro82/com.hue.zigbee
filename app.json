@@ -1,6 +1,6 @@
 {
   "id": "com.hue.zigbee",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "sdk": 2,
   "compatibility": ">=1.5.0",
   "category": "lights",
@@ -139,6 +139,54 @@
       "zigbee": {
         "manufacturerName": "Philips",
         "productId": "LTW013",
+        "deviceId": 544,
+        "profileId": 49246,
+        "learnmode": {
+          "instruction": {
+            "en": "Unpair the light from the Hue bridge.",
+            "nl": "Ontkoppel de lamp van de Hue bridge."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time",
+            "nl": "Overgangstijd"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another.",
+            "nl": "Deze instelling bepaalt de duur in seconden van het dimmen van een niveau naar een ander."
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    },
+    {
+      "id": "hue_ambiance_ceiling",
+      "name": {
+        "en": "Hue ambiance ceiling (ZigBee)",
+        "nl": "Hue ambiance ceiling (ZigBee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "images": {
+        "large": "assets/images/large.jpg",
+        "small": "assets/images/small.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": "Philips",
+        "productId": "LTC001",
         "deviceId": 544,
         "profileId": 49246,
         "learnmode": {
