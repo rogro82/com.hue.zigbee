@@ -1,0 +1,25 @@
+{
+  "name": "com.hue.zigbee",
+  "version": "1.0.0",
+  "description": "Control your Philips Hue (ZigBee) devices with Homey!",
+  "main": "app.js",
+  "dependencies": {
+    "homey-log": "git+https://github.com/athombv/node-homey-log.git",
+    "homey-meshdriver": "git+https://github.com/athombv/node-homey-meshdriver.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run": "homeyConfig compose && athom project --run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogro82/com.hue.zigbee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogro82/com.hue.zigbee/issues"
+  },
+  "homepage": "https://github.com/rogro82/com.hue.zigbee#readme"
+}
