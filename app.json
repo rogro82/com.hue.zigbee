@@ -315,10 +315,120 @@
           }
         }
       ]
+    },
+    {
+      "id": "hue_dimmer_switch",
+      "name": {
+        "nl": "Hue dimmer switch (ZigBee)",
+        "en": "Hue dimmer switch (ZigBee)"
+      },
+      "class": "sensor",
+      "capabilities": [],
+      "zigbee": {
+        "manufacturerName": "Philips",
+        "productId": [ "RWL021" ],
+        "deviceId": [ 2080, 2096 ],
+        "profileId": 49246,
+        "learnmode": {
+          "image": "/drivers/hue_dimmer_switch/assets/icon.svg",
+          "instruction": {
+            "en": "Hold the setup button on the back for at least 10 seconds until the LED is green.\n\nWarning: This will reset the dimmer switch completely!",
+            "nl": "Houdt de setup knop op de achterkant voor tenminste 10 seconden ingedrukt tot de LED groen is.\n\nWaarschuwing: Dit zal de dimmer switch volledig resetten!"
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/hue_dimmer_switch/assets/images/large.jpg",
+        "small": "/drivers/hue_dimmer_switch/assets/images/small.jpg"
+      }
     }
   ],
   "flow": {
-    "triggers": [],
+    "triggers": [
+      {
+        "id": "hue_dimmer_switch_on",
+        "title": {
+          "en": "On-button pressed",
+          "nl": "Aan-knop ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=hue_dimmer_switch"
+          }
+        ]
+      },
+      {
+        "id": "hue_dimmer_switch_off",
+        "title": {
+          "en": "Off-button pressed",
+          "nl": "Uit-knop ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=hue_dimmer_switch"
+          }
+        ]
+      },
+      {
+        "id": "hue_dimmer_switch_dim",
+        "title": {
+          "en": "Dim buttons",
+          "nl": "Dim knoppen"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=hue_dimmer_switch"
+          },
+          {
+            "name": "action",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "up-press",
+                "label": {
+                  "en": "Dim-up pressed",
+                  "nl": "Dim-omhoog ingedrukt"
+                }
+              },
+              {
+                "id": "up-hold",
+                "label": {
+                  "en": "Dim-up hold",
+                  "nl": "Dim-omhoog ingehouden"
+                }
+              },
+              {
+                "id": "down-press",
+                "label": {
+                  "en": "Dim-down pressed",
+                  "nl": "Dim-omlaag ingedrukt"
+                }
+              },
+              {
+                "id": "down-hold",
+                "label": {
+                  "en": "Dim-down hold",
+                  "nl": "Dim-omlaag ingehouden"
+                }
+              },
+              {
+                "id": "release",
+                "label": {
+                  "en": "Dim-button released",
+                  "nl": "Dim-knop losgelaten"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "conditions": [],
     "actions": []
   }
