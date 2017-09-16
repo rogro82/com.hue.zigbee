@@ -26,6 +26,10 @@ Now un-pair the light from the dimmer-switch:
 - Keep holding the buttons while the lamp is blinking.
 - Your lamp is now un-paired and ready to be included.
 
+### Adding devices to Homey
+
+I recommend adding devices using Homey \ ZigBee instead of selecting the device to add from the Hue app. That way the correct device will be selected automatically based on the interview.
+
 ### List of supported devices
 
 - ambiance lamp
