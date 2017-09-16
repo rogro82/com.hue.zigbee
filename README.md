@@ -1,8 +1,12 @@
-### Philips Hue (ZigBee)
+# Philips Hue (ZigBee)
 
 Control your Philips Hue devices with Homey using ZigBee!
 
-#### Unpairing lights from the Hue bridge
+## Warning
+
+You will need a dimmer switch to correctly un-pair/reset lamps from the Hue bridge or to reset lamps in case something goes wrong during pairing. If you dont have one get one first before continuing!
+
+### Unpairing lights from the Hue bridge
 
 You will have to un-pair your lamp from the Hue bridge before you can pair it with Homey.
 
@@ -20,7 +24,7 @@ Now un-pair the light from the dimmer-switch:
 - Keep holding the buttons while the lamp is blinking.
 - Your lamp is now un-paired and ready to be included.
 
-#### Changelog
+### Changelog
 
 0.0.1
 - Philips Hue (ZigBee) based on the Osram Lightify app
