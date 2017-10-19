@@ -268,6 +268,53 @@
       ]
     },
     {
+      "id": "hue_white_lamp",
+      "name": {
+        "en": "Hue white lamp (ZigBee)",
+        "nl": "Hue white lamp (ZigBee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "assets/images/large.jpg",
+        "small": "assets/images/small.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": "Philips",
+        "productId": [ "LWB006" ],
+        "deviceId": 256,
+        "profileId": 49246,
+        "learnmode": {
+          "instruction": {
+            "en": "Unpair the light from the Hue bridge.",
+            "nl": "Ontkoppel de lamp van de Hue bridge."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time",
+            "nl": "Overgangstijd"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another.",
+            "nl": "Deze instelling bepaalt de duur in seconden van het dimmen van een niveau naar een ander."
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    },
+    {
       "id": "hue_go",
       "name": {
         "en": "Hue go (ZigBee)",
