@@ -32,11 +32,14 @@ I recommend adding devices using Homey \ ZigBee instead of selecting the device 
 
 ### List of supported devices
 
+- white lamp
 - ambiance lamp
 - ambiance spot
 - ambiance ceiling
 - color lamp
+- color spot
 - go
+- bloom
 - dimmer switch
 
 ### Changelog
